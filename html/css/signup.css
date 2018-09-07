@@ -1,0 +1,122 @@
+h1, h2, p, li, a, label, button, td {
+    font-family: "Raleway", "Segoe UI", sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+h1, h2 {
+    font-weight: 500;
+}
+
+h1, h2, p, a {
+    text-align: center;
+}
+
+a {
+    display: block;
+}
+
+html {
+    background-color: #100;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    max-width: 600px;
+    padding: 10px;
+    background-color: #330707;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+}
+
+button, input[type="submit"] {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    height: 2em;
+    font-size: 1.5em;
+}
+
+button:hover, input[type="submit"]:hover {
+    color: black;
+    background-color: white;
+}
+
+button[type="submit"], input[type="submit"] {
+    display: block;
+    margin: 10px auto;
+}
+
+input[type="text"], input[type="password"] {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 0.2em 1em;
+    text-align: center;
+    width: 90%;
+    height: 2em;
+    display: block;
+    margin: 10px auto;
+}
+
+table {
+    margin: 0 auto;
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
+
+table, tr, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: 500;
+}
+
+.g-recaptcha>div {
+    display: block;
+    margin: 0 auto;
+}
+
+.error {
+    color: darkred;
+    font-size: 2em;
+    font-weight: bold;
+    animation: pulsate 3s ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+#matchalert {
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        width: 100%;
+        background-color: #100;
+        border: none;
+        transition-delay: 0;
+    }
+}

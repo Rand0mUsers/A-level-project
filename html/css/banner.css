@@ -1,0 +1,55 @@
+.homebtn {
+    margin: 0px 5px;
+    padding: 20px 20px;
+    line-height: 0px;
+}
+
+.homebtn:hover {
+    background-color: white;
+    transition-duration: 0.6s;
+    color: black;
+}
+
+#banner {
+    display: flex;
+    border-bottom: 5px solid #A00;  
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+#title{
+    font-size: 50px;
+    font-family: "Montserrat", "Segoe UI", sans-serif;
+    margin: 0;
+    transition-duration: 0.5s;
+}
+
+#title:hover {
+    color: #888;
+    transition-duration: 0.5s;
+}
+
+.blanklink {
+    color: inherit;
+    text-decoration: inherit;
+    font-family: "Montserrat", "Segoe UI", sans-serif;
+}
+
+
+@media(max-width: 600px) {
+    #title{
+        font-size: 35px;
+    }
+    .homebtn {
+        transition-duration: 0.5s;
+        padding: 10px 10px;
+    }
+}
+
+@media(max-width: 350px) {
+    #title{
+        font-size: 20px;
+    }
+}
+

@@ -1,0 +1,92 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+body > * {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.item {
+    flex-grow: 1;
+    background-color: #333;
+    border: 1px solid white;
+    min-width: 20px;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px 0 2px;
+}
+
+.selected {
+    background-color: #958213;
+    border: 1px solid yellow;
+}
+
+.select-swap {
+    background-color: #dd6111;
+    border: 1px solid #f10000;
+}
+
+.locked {
+    background-color: #4caf50;
+    border: 1px solid lightgreen;
+}
+
+.newpass {
+    border: 1px solid lightgreen;
+    animation: blink 0.5s cubic-bezier(0.585, 0.095, 0.000, 1.000);
+}
+
+@keyframes blink {
+    0% {
+        background-color: rgba(65, 168, 68, 0.486);
+    }
+    100% {
+        background-color: #333;
+    }
+}
+
+#controls-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.control {
+    width: auto;
+    height: 32px;
+    padding: 0 10px 0 10px;
+    font-size: 16px;
+}
+
+.control:disabled {
+    color: #666;
+}
+
+.box {
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 5px;
+    line-height: 0px;
+    padding: 0 5px 0 5px;
+}
+
+#speed {
+    height: 30px;
+    width: 70px;
+}
+
+.hidden {
+    display: none;
+}

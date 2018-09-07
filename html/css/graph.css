@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+#container {
+    flex-grow: 1;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+}
+
+#graphcontainer {
+    min-height: 200px;
+    min-width: 200px;
+    flex-grow: 1;
+}
+
+#controls {
+    min-width: 100px;
+    min-height: 100px;
+    background-color: #200;
+    border-left: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    #container {
+        flex-direction: column;
+    }
+    #controls {
+        min-height: 0;
+        height: initial;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-top: 1px solid white;
+        border-left: none;
+    }
+    #graphcontainer {
+        flex-grow: 1;
+    }
+}
